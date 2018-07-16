@@ -1,0 +1,17 @@
+{
+  "name": "jwt-generator",
+  "version": "1.0.0",
+  "description": "JSON Web Token Microservice for FileMaker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Robert Trammel",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "base64url": "^3.0.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0"
+  }
+}
