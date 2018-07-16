@@ -11,10 +11,11 @@ The 'jsonwebtoken' library automatically generates the header, so all you need i
 ##
 You will need to have this running on an unused port and access it through the url 
 
-* URL Components:
-localhost:<port>?
-  payload=<base64 encoded claim>
-  &secret=<base64 encoded private key>
-*
+localhost:{port}?
+  payload={base64 encoded claim}
+  &secret={base64 encoded private key}
   
+##
 It was initially intended to be used on the machine calling it locally. Passing private key information over the web is not recommended. If someone can think of a way to  do this safely, then be my guest to change this code. Otherwise, I'll leave it here.
+
+You'll need to create some kind of shell script to make sure this service is running when the server is rebooted.
