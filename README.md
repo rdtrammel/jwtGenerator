@@ -3,6 +3,7 @@ Microservice running on the same server which generates a valid JSON Web Token
 
 I originally designed this to be used by FileMaker Server applications, but this can really be used by anything.
 
+My idea was to have a FileMaker database that had all of the API keys and setup for an easier time setting up FileMaker to interact with specific API's. Then use this as a server side script that the app could call to generate valid JWT's.
 ##
 
 This will take in a base64 encoded claim, and a base64 encoded secret key and then return a valid jwt to pass into your service of choice. 
